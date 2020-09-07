@@ -1,0 +1,21 @@
+.BadgeHome {
+  height: 91vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: url('../../images/stars.svg'), #1B1B25;
+  color: #fff;
+}
+
+.BadgeHome__logo-present {
+  width: 300px;
+  margin-top: 50px;
+  position: relative
+}
+.BadgeHome__logo-present h1 {
+  font-size: 2rem;
+}
+.BadgeHome__btn {
+  position: absolute;
+  right: 0;
+}
