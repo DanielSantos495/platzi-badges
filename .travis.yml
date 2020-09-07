@@ -13,6 +13,5 @@ git:
 
 script:
   - npm install netlify-cli -g
-  - npm run build:build
   - npm run build
   - netlify deploy --prod --dir=dist
