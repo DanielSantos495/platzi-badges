@@ -15,7 +15,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].[hash].js',
     // publicPath indica desde que carpeta tienen que empezar a buscar los archivos o assets
-    publicPath: 'dist/',
+    publicPath: './',
     chunkFilename: 'js/[id].[chunkhash].js',
   },
   optimization: {
@@ -71,7 +71,7 @@ module.exports = {
     new AddAssetHtmlWebpackPlugin({
       filepath: path.resolve(__dirname, 'dist/js/*.dll.js'),
       outputPath: 'js',
-      publicPath: 'dist/js',
+      publicPath: 'js',
     }),
     // Limpieamos las carpetas justo antes de hacer build, estos porque se nos duplican archivos
     new CleanWebpackPlugin({
